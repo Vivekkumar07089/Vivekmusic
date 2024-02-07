@@ -4,7 +4,9 @@ from telebot import types
 import requests
 import time
 
-API_TOKEN = '6883396818:AAGMA4QGVZqkol8M20NzGSTPl1f_rlX9FvM'
+BOT_TOKEN = getenv("BOT_TOKEN", "")
+
+API_TOKEN = BOT_TOKEN
 bot = telebot.TeleBot(API_TOKEN)
   #made by @DEVSNP
 @bot.message_handler(commands=['start'])
